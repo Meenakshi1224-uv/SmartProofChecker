@@ -1,0 +1,228 @@
+[
+  {
+    "statement": "If n squared is odd, then n is odd",
+    "method": "contraposition",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Original statement: If n\u00b2 is odd, then n is odd.",
+      "Step 1: Prove the contrapositive.",
+      "If n is even, then n\u00b2 is even.",
+      "Step 2: Let n = 2k.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k)\u00b2",
+      "n\u00b2 = 4k\u00b2",
+      "n\u00b2 = 2(2k\u00b2)",
+      "Step 4: Therefore n\u00b2 is even.",
+      "Step 5: The contrapositive is true.",
+      "Hence the original statement is true."
+    ],
+    "created_at": "2026-11-10T07:04:31Z"
+  },
+  {
+    "statement": "If n squared is odd, then n is odd",
+    "method": "direct",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Let n be an odd integer.",
+      "Step 2: n = 2k + 1, where k is an integer.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k + 1)\u00b2",
+      "Step 4: Expand.",
+      "n\u00b2 = 4k\u00b2 + 4k + 1",
+      "Step 5: Factor out 2.",
+      "n\u00b2 = 2(2k\u00b2 + 2k) + 1",
+      "Step 6: Since 2k\u00b2 + 2k is an integer, n\u00b2 is odd.",
+      "Hence proved."
+    ],
+    "created_at": "2026-11-10T07:04:18Z"
+  },
+  {
+    "statement": "Prove that square root of 2 is irrational",
+    "method": "contradiction",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Assume \u221a2 is rational.",
+      "Step 2: Then \u221a2 = a/b, where a and b are coprime integers.",
+      "Step 3: Square both sides.",
+      "2 = a\u00b2/b\u00b2",
+      "a\u00b2 = 2b\u00b2",
+      "Step 4: Therefore a\u00b2 is even, so a is even.",
+      "Let a = 2k.",
+      "Step 5: Substitute.",
+      "4k\u00b2 = 2b\u00b2",
+      "b\u00b2 = 2k\u00b2",
+      "Step 6: Therefore b is even.",
+      "Step 7: Both a and b are even.",
+      "This contradicts the assumption that a and b are coprime.",
+      "Therefore \u221a2 is irrational."
+    ],
+    "created_at": "2026-11-10T07:03:53Z"
+  },
+  {
+    "statement": "Prove that the square of an odd integer is odd",
+    "method": "direct",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Let n be an odd integer.",
+      "Step 2: n = 2k + 1, where k is an integer.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k + 1)\u00b2",
+      "Step 4: Expand.",
+      "n\u00b2 = 4k\u00b2 + 4k + 1",
+      "Step 5: Factor out 2.",
+      "n\u00b2 = 2(2k\u00b2 + 2k) + 1",
+      "Step 6: Since 2k\u00b2 + 2k is an integer, n\u00b2 is odd.",
+      "Hence proved."
+    ],
+    "created_at": "2026-11-10T07:03:06Z"
+  },
+  {
+    "statement": "Prove that the square of an odd integer is odd",
+    "method": "induction",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Mathematical Induction",
+      "Step 1: Identify the proposition P(n).",
+      "Step 2: Verify the base case P(1).",
+      "Step 3: Assume P(k) is true.",
+      "Step 4: Use the assumption to prove P(k+1).",
+      "Step 5: Conclude that P(n) holds for all positive integers n.",
+      "The detailed derivation for this statement is not implemented."
+    ],
+    "created_at": "2026-11-10T07:02:49Z"
+  },
+  {
+    "statement": "Prove that the square of an odd integer is odd",
+    "method": "direct",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Let n be an odd integer.",
+      "Step 2: n = 2k + 1, where k is an integer.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k + 1)\u00b2",
+      "Step 4: Expand.",
+      "n\u00b2 = 4k\u00b2 + 4k + 1",
+      "Step 5: Factor out 2.",
+      "n\u00b2 = 2(2k\u00b2 + 2k) + 1",
+      "Step 6: Since 2k\u00b2 + 2k is an integer, n\u00b2 is odd.",
+      "Hence proved."
+    ],
+    "created_at": "2026-11-10T07:02:43Z"
+  },
+  {
+    "statement": "Prove that the square of an odd integer is odd",
+    "method": "direct",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Let n be an odd integer.",
+      "Step 2: n = 2k + 1, where k is an integer.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k + 1)\u00b2",
+      "Step 4: Expand.",
+      "n\u00b2 = 4k\u00b2 + 4k + 1",
+      "Step 5: Factor out 2.",
+      "n\u00b2 = 2(2k\u00b2 + 2k) + 1",
+      "Step 6: Since 2k\u00b2 + 2k is an integer, n\u00b2 is odd.",
+      "Hence proved."
+    ],
+    "created_at": "2026-11-10T07:02:29Z"
+  },
+  {
+    "statement": "Prove that the square of an odd integer is odd",
+    "method": "direct",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Let n be an odd integer.",
+      "Step 2: n = 2k + 1, where k is an integer.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k + 1)\u00b2",
+      "Step 4: Expand.",
+      "n\u00b2 = 4k\u00b2 + 4k + 1",
+      "Step 5: Factor out 2.",
+      "n\u00b2 = 2(2k\u00b2 + 2k) + 1",
+      "Step 6: Since 2k\u00b2 + 2k is an integer, n\u00b2 is odd.",
+      "Hence proved."
+    ],
+    "created_at": "2026-11-10T06:46:22Z"
+  },
+  {
+    "statement": "Show that sqrt(2) is irrational",
+    "method": "contradiction",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Assume \u221a2 is rational.",
+      "Step 2: Then \u221a2 = a/b, where a and b are coprime integers.",
+      "Step 3: Square both sides.",
+      "2 = a\u00b2/b\u00b2",
+      "a\u00b2 = 2b\u00b2",
+      "Step 4: Therefore a\u00b2 is even, so a is even.",
+      "Let a = 2k.",
+      "Step 5: Substitute.",
+      "4k\u00b2 = 2b\u00b2",
+      "b\u00b2 = 2k\u00b2",
+      "Step 6: Therefore b is even.",
+      "Step 7: Both a and b are even.",
+      "This contradicts the assumption that a and b are coprime.",
+      "Therefore \u221a2 is irrational."
+    ],
+    "created_at": "2026-11-10T06:45:24Z"
+  },
+  {
+    "statement": "Prove by induction that 1 + 2 + ... + n = n(n+1)/2",
+    "method": "induction",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Define P(n): 1 + 2 + ... + n = n(n+1)/2",
+      "Step 2: Base Case n = 1.",
+      "LHS = 1",
+      "RHS = 1(1+1)/2 = 1",
+      "Therefore P(1) is true.",
+      "Step 3: Assume P(k) is true.",
+      "1 + 2 + ... + k = k(k+1)/2",
+      "Step 4: Prove P(k+1).",
+      "1 + 2 + ... + k + (k+1)",
+      "= k(k+1)/2 + (k+1)",
+      "= (k+1)(k+2)/2",
+      "Step 5: This is the required formula for k+1.",
+      "Hence P(k+1) is true.",
+      "Therefore the statement is true for all positive integers n."
+    ],
+    "created_at": "2026-11-10T06:45:24Z"
+  },
+  {
+    "statement": "Prove that the square of an odd integer is odd",
+    "method": "direct",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Let n be an odd integer.",
+      "Step 2: n = 2k + 1, where k is an integer.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k + 1)\u00b2",
+      "Step 4: Expand.",
+      "n\u00b2 = 4k\u00b2 + 4k + 1",
+      "Step 5: Factor out 2.",
+      "n\u00b2 = 2(2k\u00b2 + 2k) + 1",
+      "Step 6: Since 2k\u00b2 + 2k is an integer, n\u00b2 is odd.",
+      "Hence proved."
+    ],
+    "created_at": "2026-11-10T06:45:24Z"
+  },
+  {
+    "statement": "Prove that the square of an odd integer is odd",
+    "method": "direct",
+    "answer": "Proof steps generated",
+    "steps": [
+      "Step 1: Let n be an odd integer.",
+      "Step 2: n = 2k + 1, where k is an integer.",
+      "Step 3: Square both sides.",
+      "n\u00b2 = (2k + 1)\u00b2",
+      "Step 4: Expand.",
+      "n\u00b2 = 4k\u00b2 + 4k + 1",
+      "Step 5: Factor out 2.",
+      "n\u00b2 = 2(2k\u00b2 + 2k) + 1",
+      "Step 6: Since 2k\u00b2 + 2k is an integer, n\u00b2 is odd.",
+      "Hence proved."
+    ],
+    "created_at": "2026-11-10T06:44:38Z"
+  }
+]

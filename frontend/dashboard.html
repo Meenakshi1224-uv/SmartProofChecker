@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartProofChecker | Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SmartProofChecker</div>
+        <div class="header-right">
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/generator.html">Generator</a>
+                <a href="/history.html">History</a>
+                <a href="/learn.html">Learn</a>
+                <a href="/login.html">Login</a>
+            </nav>
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="dashboard-shell">
+        <div class="page-topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Overview of your proof work and study progress.</p>
+            </div>
+            <div class="page-actions">
+                <button type="button" class="back-btn" onclick="history.back()">← Back</button>
+                <button>+ New Proof</button>
+            </div>
+        </div>
+
+        <section class="card hero-panel">
+            <div class="hero-copy">
+                <h2>Math progress at a glance</h2>
+                <p>Keep your proof sessions organized, review recent work, and jump back into solving challenging problems.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80" alt="Mathematics dashboard illustration">
+            </div>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="dashboard-card">
+                <h3>Proofs Created</h3>
+                <div class="metric">24</div>
+                <div class="metric-label">Completed this month</div>
+            </article>
+            <article class="dashboard-card">
+                <h3>Equations Solved</h3>
+                <div class="metric">41</div>
+                <div class="metric-label">Across algebra tasks</div>
+            </article>
+            <article class="dashboard-card">
+                <h3>Accuracy</h3>
+                <div class="metric">96%</div>
+                <div class="metric-label">Current verification rate</div>
+            </article>
+            <article class="dashboard-card">
+                <h3>Study Streak</h3>
+                <div class="metric">8 days</div>
+                <div class="metric-label">Working on proofs</div>
+            </article>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="dashboard-card">
+                <h3>Quick Actions</h3>
+                <div class="quick-actions">
+                    <a href="/generator.html">Generate Proof</a>
+                    <a href="/history.html" class="secondary">Open History</a>
+                    <a href="/learn.html" class="secondary">Study Concepts</a>
+                </div>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Recent Activity</h3>
+                <ul class="activity-list">
+                    <li>Validated direct proof for odd squares.</li>
+                    <li>Solved 3 algebra equations successfully.</li>
+                    <li>Reviewed induction example for sums.</li>
+                    <li>Attempted contradiction proof for irrationality.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartProofChecker | Generator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SmartProofChecker</div>
+        <div class="header-right">
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/generator.html">Generator</a>
+                <a href="/history.html">History</a>
+                <a href="/learn.html">Learn</a>
+                <a href="/login.html">Login</a>
+            </nav>
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card hero-panel">
+            <div class="hero-copy">
+                <h1>Proof Generator</h1>
+                <p>Create a structured proof using a supported method and build a deeper understanding of mathematical argumentation.</p>
+                <div class="page-actions">
+                    <button type="button" class="back-btn" onclick="history.back()">← Back</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1000&q=80" alt="Mathematics proof generation">
+            </div>
+        </section>
+
+        <section class="card">
+            <p>Generate a structured proof, or let automatic selection choose a supported method from your statement.</p>
+
+            <label for="statement">Statement</label>
+            <textarea id="statement" placeholder="Example: Prove that the square of an odd integer is odd"></textarea>
+
+            <label for="proofMethod">Proof Method</label>
+            <select id="proofMethod">
+                <option value="auto">AI Generated (Choose a Method)</option>
+                <option value="direct">Direct Proof</option>
+                <option value="induction">Mathematical Induction</option>
+                <option value="contradiction">Proof by Contradiction</option>
+                <option value="contraposition">Proof by Contraposition</option>
+            </select>
+
+            <div class="buttons">
+                <button id="generateBtn">Generate Proof</button>
+                <button id="clearBtn" class="secondary">Clear</button>
+            </div>
+
+            <div id="proofStatus"></div>
+            <div id="proofResult" class="result"></div>
+            <button type="button" id="useGeneratedProofBtn" class="secondary" hidden>Verify This Generated Proof</button>
+        </section>
+
+        <section class="card" id="verification">
+            <h2>Proof Verification</h2>
+            <p>Check supported proof patterns. Proofs outside the built-in patterns are reported as inconclusive.</p>
+            <label for="theorem">Statement</label>
+            <textarea id="theorem" placeholder="Enter the theorem"></textarea>
+            <label for="proof">Your Proof</label>
+            <textarea id="proof" placeholder="Enter or generate a proof"></textarea>
+            <button type="button" id="verifyBtn">Verify Proof</button>
+            <div id="verificationResult" class="result" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SmartProofChecker | Mathematical Proof Assistant</p>
+    </footer>
+
+    <script src="/js/generator.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartProofChecker | History</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SmartProofChecker</div>
+        <div class="header-right">
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                <a href="/generator.html">Generator</a>
+                <a href="/history.html">History</a>
+                <a href="/learn.html">Learn</a>
+                <a href="/login.html">Login</a>
+            </nav>
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <div class="page-topbar">
+                <h1>Proof History</h1>
+                <div class="page-actions">
+                    <button type="button" class="back-btn" onclick="history.back()">← Back</button>
+                    <button type="button" class="secondary" id="clearHistoryBtn">Clear History</button>
+                </div>
+            </div>
+            <div id="historyList" class="history-grid"></div>
+        </section>
+    </main>
+
+    <script>
+        async function loadHistory() {
+            const historyList = document.getElementById("historyList");
+            try {
+                const response = await fetch("/api/history");
+                const data = await response.json();
+                if (!data.success) throw new Error(data.error || "Unable to load history.");
+                if (!data.history.length) {
+                    historyList.innerHTML = '<div class="history-empty">No saved proofs yet. Generate your first proof to see it here.</div>';
+                    return;
+                }
+                historyList.innerHTML = data.history.map((item) => `
+                    <article class="history-card">
+                        <h3>${item.method}</h3>
+                        <div class="history-meta">${new Date(item.created_at).toLocaleString()}</div>
+                        <p><strong>Statement:</strong> ${item.statement}</p>
+                        <p><strong>Answer:</strong> ${Array.isArray(item.answer) ? item.answer.join(', ') : item.answer}</p>
+                    </article>
+                `).join("");
+            } catch (error) {
+                historyList.innerHTML = `<div class="history-empty">Error: ${error.message}</div>`;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHistory();
+
+            const clearButton = document.getElementById("clearHistoryBtn");
+            if (clearButton) {
+                clearButton.addEventListener("click", async () => {
+                    if (!confirm("Clear all proof history?")) return;
+                    try {
+                        const response = await fetch("/api/history", { method: "DELETE" });
+                        const data = await response.json();
+                        if (!response.ok || !data.success) throw new Error(data.error || "Could not clear history.");
+                        loadHistory();
+                    } catch (error) {
+                        alert(error.message);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

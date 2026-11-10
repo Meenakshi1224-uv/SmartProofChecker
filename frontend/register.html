@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartProofChecker | Register</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body class="auth-body">
+    <div class="auth-card">
+        <div class="auth-topbar">
+            <button type="button" class="back-btn" onclick="history.back()">← Back</button>
+        </div>
+        <h1>Create account</h1>
+        <p class="subtext">Join SmartProofChecker</p>
+        <form id="registerForm">
+            <label>Full name</label>
+            <input type="text" placeholder="Jane Doe">
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com">
+            <label>Password</label>
+            <input type="password" placeholder="Create a strong password">
+            <button type="submit">Register</button>
+        </form>
+        <p class="auth-link">Already have an account? <a href="/login.html">Login</a></p>
+    </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+            alert("Demo registration successful. Redirecting to the home page.");
+            window.location.href = "/";
+        });
+    </script>
+</body>
+</html>

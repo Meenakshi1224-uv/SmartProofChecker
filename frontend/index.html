@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartProofChecker</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">SmartProofChecker</div>
+        <div class="header-right">
+            <nav class="nav-links">
+                <a href="/dashboard">Dashboard</a>
+                <a href="/generator.html">Generator</a>
+                <a href="/history.html">History</a>
+                <a href="/learn.html">Learn</a>
+                <a href="/login.html">Login</a>
+            </nav>
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="card hero-panel">
+            <div class="hero-copy">
+                <h1>Build rigorous mathematical proofs with confidence.</h1>
+                <p>Generate structured proofs, solve equations instantly, and review your mathematical work in one polished workspace.</p>
+                <div class="buttons">
+                    <a href="/generator.html" class="secondary-btn">Generate Proof</a>
+                    <button type="button" class="back-btn" onclick="history.back()">← Back</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1000&q=80" alt="Mathematics workspace">
+            </div>
+        </section>
+
+        <section class="card">
+
+            <h2>Mathematical Proof Generator</h2>
+            <p>Generate mathematical proofs and solve algebraic equations.</p>
+
+            <label for="statement">Enter your mathematical statement</label>
+
+            <textarea id="statement" placeholder="Example: Prove that the square of an odd integer is odd"></textarea>
+
+            <label for="proofMethod">Select Proof Method</label>
+
+            <select id="proofMethod">
+                <option value="auto">AI Generated (Choose a Method)</option>
+                <option value="direct">Direct Proof</option>
+                <option value="induction">Mathematical Induction</option>
+                <option value="contradiction">Proof by Contradiction</option>
+                <option value="contraposition">Proof by Contraposition</option>
+            </select>
+
+            <div class="buttons">
+                <button id="generateBtn">Generate Proof</button>
+                <button id="clearBtn" class="secondary">Clear</button>
+            </div>
+
+            <div id="proofStatus"></div>
+
+            <div id="proofResult" class="result"></div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Algebra Calculator</h2>
+
+            <p>Enter an equation to calculate the solution.</p>
+
+            <textarea id="mathInput" placeholder="Example: x**2 - 5*x + 6 = 0"></textarea>
+
+            <div class="buttons">
+                <button id="solveMathBtn">Solve Equation</button>
+                <button id="clearMathBtn" class="secondary">Clear</button>
+            </div>
+
+            <div id="mathResult" class="result"></div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Proof Verification</h2>
+
+            <label for="verifyStatement">Statement</label>
+
+            <textarea id="verifyStatement" placeholder="Enter the theorem"></textarea>
+
+            <label for="verifyProof">Your Proof</label>
+
+            <textarea id="verifyProof" placeholder="Enter your proof"></textarea>
+
+            <button id="verifyBtn">Verify Proof</button>
+
+            <div id="verificationResult" class="result"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartProofChecker | Mathematical Proof Assistant</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
